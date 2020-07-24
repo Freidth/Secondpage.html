@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Webpage</title>
+        <title>My Webpage today</title>
         <style>
-         a::before {
-          content: "\21d2 Click here: ";
-          font-weight: bold;
+         button {
+           width: 200px;
+           height: 50px;
+           font-size: 24px;
+           background-color: blue;
          }
-         P::selection{
-           color:green;
-           background-color: white;
+         button:hover {
+           background-color: purple;
          }
         </style>
     </head>
     <body>
-        Hello, world!
-        <p>
-          Today is the 13 of july, in the year 2020
-        </p>
-        <ul>
-         <li><a href="#">https://github.com/Freidth/Firstpage.html.git</a></li>
-         <li><a href="#">another link</a></li>
-         <li><a href="#">third link</a></li>
-        <ul>
+        <a href="https://github.com/Freidth/Firstpage.html.git">click here!</a>
+        <div>
+          <input name="name" type="text" placeholder="Name">
+          <input name="password" type="password" placeholder="placeholder"
+        </div>
+        <div>
+          favorite color?
+          <input name="color" type="radio" value="red"> Red
+          <input name="color" type="radio" value="green"> Green
+        </div>
+        <div>
+          <input name="country" list="countries" placeholder="country">
+          <datalist id="countries">
+            <option value="Murica">
+        </div>
+        <button>click me!!</button>
     </body>
 </html>
